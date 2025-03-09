@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import Page from './components/pages/page.js';
+import Navbarre from './components/pages/navbarre.js';
+import Menu from './components/pages/menu.js';
+import Chef from './components/pages/chef.js';
+import Cuisine from './components/pages/cuisine.js';
+import Reservation from './components/pages/reservation.js';
+import Contact from './components/pages/contact.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Page />
+      <Navbarre />
+      <Chef />
+      <Cuisine />
+      <Menu />
+      <Reservation />
+      <Contact />
     </div>
   );
 }
