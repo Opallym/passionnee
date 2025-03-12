@@ -1,35 +1,74 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-scroll";
 
-const navbarre = () => {
+const NavbarItems = [
+    { id: 'HautDePage', label: <img src="/Image/Logo transparent.png" alt="" width="50" height="50" /> },
+    { id: 'Chef', label: 'Chef' },
+    { id: 'Cuisine', label: 'Cuisine' },
+    { id: 'Menu', label: 'Menu' },
+    { id: 'Contacts', label: 'Contacts' },
+];
+
+const Navbar = () => {
     return (
-        <div className="d-flex flex-column vh-100 position-relative" style={{ marginBottom: '50px' }}>
-            {/* Navbar sticky */}
-            <nav className="navbar navbar-light bg-white sticky-top w-100" style={{ zIndex: 1 }}>
-                <div className="container" style={{ paddingLeft: "15px", paddingRight: "15px" }}>
-                    <div className="d-flex justify-content-between w-100">
-                        <a className="navbar-brand" href="#cuisine">cuisine</a>
-                        <a className="navbar-brand" href="#chef">chef</a>
-                        <a className="navbar-brand" href="#menu">menu</a>
-                        <a className="navbar-brand" href="#reservation">reservation</a>
-                        <a className="navbar-brand" href="#contact">contact</a>
-                    </div>
-                </div>
-            </nav>
-
-            {/* Image centrée */}
-            <div className="d-flex justify-content-center align-items-center" style={{ height: "calc(100vh - 56px)" }}>
-                <img
-                    src="/Image/fond resto.png"
-                    alt="Mon Image"
-                    className="img-fluid"
-                    style={{
-                        maxWidth: "100%",  // S'adapte à la largeur du conteneur
-                        height: "auto"     // Maintient les proportions de l'image
-                    }}
-                />
-            </div>
-        </div>
+        <nav style={styles.navbar}>
+            <ul style={styles.navList}>
+                {NavbarItems.map(({ id, label }) => (
+                    <li key={id} style={styles.navItem}>
+                        <Link
+                            to={id}
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            offset={-70}
+                            style={styles.navLink}
+                        >
+                            {label}
+                        </Link>
+                    </li>
+                ))}
+            </ul>
+        </nav>
     );
-}
+};
 
-export default navbarre;
+const styles = {
+    navbar: {
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100%',
+        backgroundColor: '#FFFFFF',
+        padding: '10px 0',
+        zIndex: 10,
+        textAlign: 'center',
+        height: '60px',
+    },
+    navList: {
+        listStyleType: 'none',
+        margin: 0,
+        padding: 0,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100%',
+    },
+    navItem: {
+        margin: '0 20px',
+    },
+    navLink: {
+        color: 'black',
+        textDecoration: 'none',
+        fontSize: '18px',
+        fontWeight: 'bold',
+        textTransform: 'uppercase',
+        transition: 'color 0.3s',
+    },
+
+    logo: {
+        marginRight: '20px',
+        height: '50px',
+    },
+};
+
+export default Navbar;

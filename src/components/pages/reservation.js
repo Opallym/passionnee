@@ -1,7 +1,8 @@
+import classNames from "classnames";
 import React, { useState } from "react";
 
+<section id="reservation"></section>
 const Reservation = () => {
-    // États pour gérer les valeurs du formulaire
     const [formData, setFormData] = useState({
         date: '',
         nom: '',
@@ -12,7 +13,6 @@ const Reservation = () => {
         commentaire: '',
     });
 
-    // Gestion des changements dans les champs du formulaire
     const handleChange = (e) => {
         const { id, value } = e.target;
         setFormData((prevData) => ({
@@ -21,11 +21,10 @@ const Reservation = () => {
         }));
     };
 
-    // Gestion de la soumission du formulaire
+
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Données du formulaire soumises :', formData);
-        // Vous pouvez ajouter ici la logique pour envoyer les données à un serveur
     };
 
     return (
@@ -33,7 +32,7 @@ const Reservation = () => {
             <h2 className="text-center mb-4">Réserver une table</h2>
 
             <form onSubmit={handleSubmit}>
-                {/* Champ Date de réservation */}
+
                 <div className="mb-3">
                     <label htmlFor="date" className="form-label">
                         Date de réservation
@@ -48,7 +47,7 @@ const Reservation = () => {
                     />
                 </div>
 
-                {/* Champ Nom */}
+
                 <div className="mb-3">
                     <label htmlFor="nom" className="form-label">
                         Nom
@@ -64,7 +63,7 @@ const Reservation = () => {
                     />
                 </div>
 
-                {/* Champ Email */}
+
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label">
                         Email
@@ -80,7 +79,7 @@ const Reservation = () => {
                     />
                 </div>
 
-                {/* Champ Téléphone */}
+
                 <div className="mb-3">
                     <label htmlFor="telephone" className="form-label">
                         Téléphone
@@ -96,7 +95,7 @@ const Reservation = () => {
                     />
                 </div>
 
-                {/* Champ Nombre de personnes */}
+
                 <div className="mb-3">
                     <label htmlFor="personnes" className="form-label">
                         Nombre de personnes
@@ -113,7 +112,7 @@ const Reservation = () => {
                     />
                 </div>
 
-                {/* Champ Heure de réservation */}
+
                 <div className="mb-3">
                     <label htmlFor="heure" className="form-label">
                         Heure de réservation
@@ -128,7 +127,7 @@ const Reservation = () => {
                     />
                 </div>
 
-                {/* Champ Commentaire */}
+
                 <div className="mb-3">
                     <label htmlFor="commentaire" className="form-label">
                         Commentaire
@@ -143,7 +142,7 @@ const Reservation = () => {
                     ></textarea>
                 </div>
 
-                {/* Bouton de soumission */}
+
                 <div className="text-center">
                     <button type="submit" className="btn btn-primary">
                         Réserver
@@ -154,4 +153,4 @@ const Reservation = () => {
     );
 };
 
-export default Reservation.js
+export default Reservation;
