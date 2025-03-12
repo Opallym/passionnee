@@ -35,7 +35,7 @@ const Navbar = () => {
 const styles = {
     navbar: {
         position: 'fixed',
-        top: 0,
+        top: 90,
         left: 0,
         width: '100%',
         backgroundColor: '#FFFFFF',

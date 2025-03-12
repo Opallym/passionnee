@@ -5,13 +5,16 @@ import Chef from './components/pages/chef';
 import Cuisine from './components/pages/cuisine';
 import Reservation from './components/pages/reservation';
 import Contact from './components/pages/contact';
+import Carousel from './components/pages/carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
     <>
       <Navbarre />
       <Page />
+      <Carousel />
       <Chef />
       <Cuisine />
       <Menu />
