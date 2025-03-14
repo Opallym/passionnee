@@ -1,7 +1,6 @@
 import classNames from "classnames";
 import React, { useState } from "react";
 
-<section id="reservation"></section>
 const Reservation = () => {
     const [formData, setFormData] = useState({
         date: '',
@@ -21,14 +20,13 @@ const Reservation = () => {
         }));
     };
 
-
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Données du formulaire soumises :', formData);
     };
 
     return (
-        <div className="container mt-5" id="Reservation">
+        <div className="container mt-5" id="Reservation1">
             <h2 className="text-center mb-4">Réserver une table</h2>
 
             <form onSubmit={handleSubmit}>
@@ -47,7 +45,6 @@ const Reservation = () => {
                     />
                 </div>
 
-
                 <div className="mb-3">
                     <label htmlFor="nom" className="form-label">
                         Nom
@@ -62,7 +59,6 @@ const Reservation = () => {
                         required
                     />
                 </div>
-
 
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label">
@@ -79,7 +75,6 @@ const Reservation = () => {
                     />
                 </div>
 
-
                 <div className="mb-3">
                     <label htmlFor="telephone" className="form-label">
                         Téléphone
@@ -94,7 +89,6 @@ const Reservation = () => {
                         required
                     />
                 </div>
-
 
                 <div className="mb-3">
                     <label htmlFor="personnes" className="form-label">
@@ -112,7 +106,6 @@ const Reservation = () => {
                     />
                 </div>
 
-
                 <div className="mb-3">
                     <label htmlFor="heure" className="form-label">
                         Heure de réservation
@@ -127,7 +120,6 @@ const Reservation = () => {
                     />
                 </div>
 
-
                 <div className="mb-3">
                     <label htmlFor="commentaire" className="form-label">
                         Commentaire
@@ -141,7 +133,6 @@ const Reservation = () => {
                         onChange={handleChange}
                     ></textarea>
                 </div>
-
 
                 <div className="text-center">
                     <button type="submit" className="btn btn-primary">

@@ -3,9 +3,9 @@ import React from 'react';
 
 const Cuisine = () => {
     return (
-        <section id="LaCuisine">
+        <section id="LaCuisine1" style={{ marginTop: '60px' }}>
             <h1>La cuisine:</h1>
-            <div id="cuisine" className="container-fluid mx-0 w-100">
+            <div className="container-fluid mx-0 w-100">
 
                 <div className="row m-0 p-0">
                     <div className="col-md-6 d-flex justify-content-center align-items-center">
@@ -16,7 +16,6 @@ const Cuisine = () => {
                     </div>
                 </div>
 
-
                 <div className="row m-0 p-0">
                     <div className="col-md-6 d-flex justify-content-center align-items-center">
                         <img src='/Image/nospain.png' className="img-fluid" alt="Nos Pain" />
@@ -25,7 +24,6 @@ const Cuisine = () => {
                         <img src='/Image/notrecave.png' className="img-fluid" alt="Notre Cave" />
                     </div>
                 </div>
-
 
                 <div className="row m-0 p-0">
                     <div className="col-md-6 d-flex justify-content-center align-items-center">

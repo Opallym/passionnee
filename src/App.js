@@ -1,13 +1,12 @@
-import Page from './components/pages/page';
-import Navbarre from './components/pages/navbarre';
-import Menu from './components/pages/menu';
-import Chef from './components/pages/chef';
-import Cuisine from './components/pages/cuisine';
-import Reservation from './components/pages/reservation';
-import Contact from './components/pages/contact';
-import Carousel from './components/pages/carousel';
+import Page from './components/pages/page.js';
+import Navbarre from './components/pages/navbarre.js';
+import Menu from './components/pages/menu.js';
+import Chef from './components/pages/chef.js';
+import Cuisine from './components/pages/cuisine.js';
+import Reservation from './components/pages/reservation.js';
+import Contact from './components/pages/contact.js';
+import Carousel from './components/pages/carousel.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 function App() {
   return (

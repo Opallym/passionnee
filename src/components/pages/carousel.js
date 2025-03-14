@@ -12,19 +12,19 @@ const ImageCarousel = () => {
                             className="d-block"
                             src="Image/Platcarte.png"
                             alt="First slide"
-                            style={{ borderRadius: '10px' }} // Optionnel : pour arrondir les coins
+                            style={{ borderRadius: '10px' }}
                         />
                         <img
                             className="d-block"
                             src="Image/Platcarte2.png"
                             alt="Second slide"
-                            style={{ borderRadius: '10px' }} // Optionnel : pour arrondir les coins
+                            style={{ borderRadius: '10px' }}
                         />
                         <img
                             className="d-block"
                             src="Image/Platcarte3.png"
                             alt="Third slide"
-                            style={{ borderRadius: '10px' }} // Optionnel : pour arrondir les coins
+                            style={{ borderRadius: '10px' }}
                         />
                     </div>
                 </Carousel.Item>
@@ -34,19 +34,19 @@ const ImageCarousel = () => {
                             className="d-block"
                             src="Image/Platcarte4.png"
                             alt="Fourth slide"
-                            style={{ borderRadius: '10px' }} // Optionnel : pour arrondir les coins
+                            style={{ borderRadius: '10px' }}
                         />
                         <img
                             className="d-block"
                             src="Image/platcarte5.jpg"
                             alt="Fifth slide"
-                            style={{ borderRadius: '10px' }} // Optionnel : pour arrondir les coins
+                            style={{ borderRadius: '10px' }}
                         />
                         <img
                             className="d-block"
                             src="Image/Platcarte6.jpg"
                             alt="Sixth slide"
-                            style={{ borderRadius: '10px' }} // Optionnel : pour arrondir les coins
+                            style={{ borderRadius: '10px' }}
                         />
                     </div>
                 </Carousel.Item>
