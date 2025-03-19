@@ -1,60 +1,28 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 
-const ImageCarousel = () => {
+const carousel = () => {
     return (
-        <div style={{ marginTop: '60px' }}>
+        <div className="carousel-container">
             <h1>Notre Carte:</h1>
             <Carousel>
                 <Carousel.Item>
-                    <div style={{ display: 'flex', justifyContent: 'center', gap: '10px' }}>
-                        <img
-                            className="d-block"
-                            src="Image/Platcarte.png"
-                            alt="First slide"
-                            style={{ borderRadius: '10px' }}
-                        />
-                        <img
-                            className="d-block"
-                            src="Image/Platcarte2.png"
-                            alt="Second slide"
-                            style={{ borderRadius: '10px' }}
-                        />
-                        <img
-                            className="d-block"
-                            src="Image/Platcarte3.png"
-                            alt="Third slide"
-                            style={{ borderRadius: '10px' }}
-                        />
+                    <div className="carousel-images">
+                        <img src="Image/Platcarte.png" alt="First slide" />
+                        <img src="Image/Platcarte2.png" alt="Second slide" />
+                        <img src="Image/Platcarte3.png" alt="Third slide" />
                     </div>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <div style={{ display: 'flex', justifyContent: 'center', gap: '10px' }}>
-                        <img
-                            className="d-block"
-                            src="Image/Platcarte4.png"
-                            alt="Fourth slide"
-                            style={{ borderRadius: '10px' }}
-                        />
-                        <img
-                            className="d-block"
-                            src="Image/platcarte5.jpg"
-                            alt="Fifth slide"
-                            style={{ borderRadius: '10px' }}
-                        />
-                        <img
-                            className="d-block"
-                            src="Image/Platcarte6.jpg"
-                            alt="Sixth slide"
-                            style={{ borderRadius: '10px' }}
-                        />
+                    <div className="carousel-images">
+                        <img src="Image/Platcarte4.png" alt="Fourth slide" />
+                        <img src="Image/platcarte5.jpg" alt="Fifth slide" />
+                        <img src="Image/Platcarte6.jpg" alt="Sixth slide" />
                     </div>
                 </Carousel.Item>
             </Carousel>
         </div>
     );
-
 };
 
-
-export default ImageCarousel;
+export default carousel;

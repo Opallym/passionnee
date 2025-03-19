@@ -17,7 +17,7 @@ const Page = () => {
                     <img src="/Image/drapeaufr.png" alt="Logo Droit" className="img-fluid" style={{ height: "60px" }} />
                 </div>
             </div>
-            <div className="d-flex justify-content-center align-items-center" style={{ height: "calc(100vh - 56px)" }}>
+            <div className="d-flex justify-content-center align-items-center">
                 <img
                     src="./Image/fond resto.png"
                     alt="Mon Image"

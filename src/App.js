@@ -6,6 +6,7 @@ import Cuisine from './components/pages/cuisine.js';
 import Reservation from './components/pages/reservation.js';
 import Contact from './components/pages/contact.js';
 import Carousel from './components/pages/carousel.js';
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
